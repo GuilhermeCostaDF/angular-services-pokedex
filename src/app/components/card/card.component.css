@@ -1,0 +1,39 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card{
+  border: 1px solid black;
+  width: 250px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+}
+
+.card__title > h3 {
+  color: rgb(255, 255, 255);
+}
+
+.card__body{
+  background-color: rgb(56, 56, 56);
+  width: 90%;
+  height: 70%;
+}
+
+.card__stats{
+  padding: 15px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.card__stats__type {
+  color: white;
+  background-color: rgb(29, 29, 29);
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
