@@ -3,7 +3,11 @@
     src="https://www.onlinepalette.com/wp-content/uploads/2021/07/Pokemon-Logo-1536x864.png"
     alt=""
   />
-  <input type="text" (input)="getPokemon($any($event.target).value)" />
+  <input
+    placeholder="search a pokemon"
+    type="text"
+    (input)="getPokemon($any($event.target).value)"
+  />
 </div>
 
 <div class="card">
