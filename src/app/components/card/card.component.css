@@ -21,6 +21,9 @@
   background-color: rgb(56, 56, 56);
   width: 90%;
   height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__stats{
