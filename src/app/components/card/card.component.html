@@ -1,3 +1,11 @@
+<div class="head">
+  <img
+    src="https://www.onlinepalette.com/wp-content/uploads/2021/07/Pokemon-Logo-1536x864.png"
+    alt=""
+  />
+  <input type="text" (input)="getPokemon($any($event.target).value)" />
+</div>
+
 <div class="card">
   <div class="card__title">
     <h3>{{ pokemon.name }}</h3>
@@ -8,7 +16,7 @@
   </div>
   <div class="card__stats">
     <div class="card__stats__type" *ngFor="let stat of pokemon.types">
-      {{ stat }}
+      {{ stat.type.name }}
     </div>
   </div>
 </div>

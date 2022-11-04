@@ -1,5 +1,6 @@
 *{
   font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
 }
 
 .card{
@@ -31,6 +32,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card__body > img {
+  width: 80%;
 }
 
 .card__stats{
