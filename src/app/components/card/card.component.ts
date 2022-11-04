@@ -1,3 +1,4 @@
+import { PokemonService } from './../../services/pokemon.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css'],
 })
 export class CardComponent implements OnInit {
-  pokemonName: string = 'Charmander';
+  pokemonName: string = 'charmander';
   pokemonPhoto: string = '';
   pokemonStats: string[] = ['Fire', 'Rock'];
 
-  constructor() {}
+  constructor(private service: PokemonService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.getPokemon(this.pokemonName);
+  }
 }
