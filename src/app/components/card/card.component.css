@@ -13,7 +13,14 @@
   border-radius: 10px;
 }
 
-.card__title > h3 {
+.card__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.card__title > h3, p {
   color: rgb(255, 255, 255);
 }
 
