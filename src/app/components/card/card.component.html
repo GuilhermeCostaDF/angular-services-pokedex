@@ -22,7 +22,7 @@
     <div
       class="card__stats__type"
       *ngFor="let stat of pokemon.types"
-      [ngClass]="getType()"
+      [ngClass]="getType(stat.type.name)"
     >
       {{ stat.type.name }}
     </div>

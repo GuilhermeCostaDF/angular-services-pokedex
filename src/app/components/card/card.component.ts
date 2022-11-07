@@ -39,18 +39,24 @@ export class CardComponent implements OnInit {
     });
   }
 
-  getType(): string {
-    for (let stat of this.pokemon.types) {
-      if (stat.type.name == 'electric') {
+  getType(type: string): string {
+    switch (type) {
+      case 'electric':
         return 'electric';
-      }
-      if (stat.type.name == 'fire') {
+      case 'fire':
         return 'fire';
-      }
-      if (stat.type.name == 'flying') {
+      case 'grass':
+        return 'grass';
+      case 'poison':
+        return 'poison';
+      case 'flying':
+        return 'flying';
+      case 'bug':
+        return 'bug';
+      case 'water':
+        return 'water';
+      default:
         return 'padrao';
-      }
     }
-    return 'padrao';
   }
 }

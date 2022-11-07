@@ -83,3 +83,23 @@
 .padrao{
   background-color: #108cda;
 }
+
+.grass{
+  background-color: green;
+}
+
+.poison{
+  background-color: purple;
+}
+
+.flying{
+  background-color: rgb(131, 131, 131);
+}
+
+.bug{
+  background-color: rgb(2, 68, 16);
+}
+
+.water{
+  background-color: blue;
+}
