@@ -55,6 +55,8 @@ export class CardComponent implements OnInit {
         return 'bug';
       case 'water':
         return 'water';
+      case 'psychic':
+        return 'psychic';
       default:
         return 'padrao';
     }
