@@ -38,4 +38,19 @@ export class CardComponent implements OnInit {
       error: (err) => console.log(err),
     });
   }
+
+  getType(): string {
+    for (let stat of this.pokemon.types) {
+      if (stat.type.name == 'electric') {
+        return 'electric';
+      }
+      if (stat.type.name == 'fire') {
+        return 'fire';
+      }
+      if (stat.type.name == 'flying') {
+        return 'padrao';
+      }
+    }
+    return 'padrao';
+  }
 }
