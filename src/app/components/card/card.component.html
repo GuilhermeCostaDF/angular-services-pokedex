@@ -12,7 +12,7 @@
 
 <div class="card">
   <div class="card__title">
-    <h3>{{ pokemon.name }}</h3>
+    <h3>{{ pokemon.name[0].toUpperCase() + pokemon.name.substring(1) }}</h3>
     <p>{{ pokemon.id }}</p>
   </div>
   <div class="card__body">
@@ -24,7 +24,7 @@
       *ngFor="let stat of pokemon.types"
       [ngClass]="getType(stat.type.name)"
     >
-      {{ stat.type.name }}
+      {{ stat.type.name[0].toUpperCase() + stat.type.name.substring(1) }}
     </div>
   </div>
 </div>
